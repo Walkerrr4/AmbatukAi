@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/@codingnepal -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AmbatukAi</title>
+    <!-- Linking Google Fonts For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@32,400,0,0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Linking Google Fonts for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+  </head>
+  <body>
+    <!-- Mobile Sidebar Menu Button -->
+    
+
+    <div class="container">
+      <!-- App Header -->
+      <header class="app-header">
+        <h1 class="heading">Halo Kawan</h1>
+        <h4 class="sub-heading">Apakah Ada Yang Harus Di bantu Mas Amba?</h4>
+      </header>
+
+      <!-- Suggestions List -->
+      <ul class="suggestions">
+        <li class="suggestions-item">
+          <p class="text">Bisakah Mas Amba Membantu Saya Mengerjakan Tugas Sekolah?</p>
+          <span class="icon material-symbols-rounded">draw</span>
+        </li>
+        <li class="suggestions-item">
+          <p class="text">Bisakah Mas Amba Memberikan Saya motivasi untuk Hari ini</p>
+          <span class="icon material-symbols-rounded">lightbulb</span>
+        </li>
+        <li class="suggestions-item">
+          <p class="text">Bagaimana cara buat ai seperti mas amba.</p>
+          <span class="icon material-symbols-rounded">explore</span>
+        </li>
+        <li class="suggestions-item">
+          <p class="text">Cara Ngoding Yang Baik Dan Benar</p>
+          <span class="icon material-symbols-rounded">code_blocks</span>
+        </li>
+      </ul>
+
+      <!-- Chats -->
+      <div class="chats-container"></div>
+
+      <!-- Prompt Input -->
+      <div class="prompt-container">
+        <div class="prompt-wrapper">
+          <form action="#" class="prompt-form">
+            <input type="text" placeholder="Tanya Mas Amba" class="prompt-input" required />
+            <div class="prompt-actions">
+              <!-- File Upload Wrapper -->
+              <div class="file-upload-wrapper">
+                <img src="#" class="file-preview" />
+                <input id="file-input" type="file" accept="image/*, .pdf, .txt, .csv" hidden />
+                <button type="button" class="file-icon material-symbols-rounded">description</button>
+                <button id="cancel-file-btn" type="button" class="material-symbols-rounded">close</button>
+                <button id="add-file-btn" type="button" class="material-symbols-rounded">attach_file</button>
+              </div>
+
+              <!-- Send Prompt and Stop Response Buttons -->
+              <button id="stop-response-btn" type="button" class="material-symbols-rounded">stop_circle</button>
+              <button id="send-prompt-btn" class="material-symbols-rounded">arrow_upward</button>
+            </div>
+          </form>
+
+          <!-- Theme and Delete Chats Buttons -->
+          <button id="theme-toggle-btn" class="material-symbols-rounded">light_mode</button>
+          <button id="delete-chats-btn" class="material-symbols-rounded">delete</button>
+        </div>
+
+        <p class="disclaimer-text">Wajar Jika Mas amba Salah, Manusia aja sering salah, apalagi Ai.</p>
+      </div>
+    </div>
+  
+    <!-- Mobile Sidebar Menu Button -->
+    <button class="sidebar-menu-button">
+      <span class="material-symbols-rounded">menu</span>
+    </button>
+    <aside class="sidebar">
+      <!-- Sidebar Header -->
+      <header class="sidebar-header">
+        <a href="#" class="header-logo">
+          <img src="images/amba1.jpg" alt="CodingNepal" />
+        </a>
+        <button class="sidebar-toggler">
+          <span class="material-symbols-rounded">chevron_left</span>
+        </button>
+      </header>
+      <nav class="sidebar-nav">
+        <!-- Primary Top Nav -->
+        <ul class="nav-list primary-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="material-symbols-rounded">dashboard</span>
+              <span class="nav-label">Dashboard</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="nav-link dropdown-title">Dashboard</a></li>
+            </ul>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown-container">
+            <a href="#" class="nav-link dropdown-toggle">
+              <span class="material-symbols-rounded">Phone</span>
+              <span class="nav-label">Contact</span>
+              <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>
+            </a>
+            <!-- Dropdown Menu -->
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="nav-link dropdown-title">Services</a></li>
+              <li class="nav-item"><a href="https://www.instagram.com/n25_juni?igsh=MWtkZTJrdGpyZWY1aA==" class="nav-link dropdown-link">Instagram</a></li>
+              <li class="nav-item"><a href="https:/tiktok.com/@dilcetnino" class="nav-link dropdown-link">Tiktok</a></li>
+              <li class="nav-item"><a href="https://wa.me/6283111684823?text=" class="nav-link dropdown-link">Whatsapp</a></li>
+            </ul>
+          </li>
+          
+          <!-- Dropdown -->
+        
+        <!-- Secondary Bottom Nav -->
+         
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="material-symbols-rounded">help</span>
+              <span class="nav-label">Privacy Policy</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="nav-link dropdown-title">Support</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>
